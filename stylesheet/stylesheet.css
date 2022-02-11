@@ -113,10 +113,18 @@ nav ul li {list-style-type:none; margin: 0px; padding:
     0px ; display: inline-block;font-family:'Source Sans Pro', sans-serif; font-size: 130%;}
 
 nav ul {float: right; word-spacing: 20px}
-a:hover{color:#168feb;transform: scale(1.525);transition:all 0.5s;}
-button{background-color: #168feb;margin: 5px; font-family:'Source Sans Pro', sans-serif ;margin-top: 25px; text-decoration: none;}
-a{text-decoration-line: none; text-decoration: none;}
-strong{color: #0f6ab1;}
+a:hover{color:#0f6ab1;transform: scale(1.525);transition:all 0.5s;}
+button{
+    background-color: #168feb;
+    margin: 5px; 
+    font-family:'Source Sans Pro', sans-serif ;
+    margin-top: 25px; 
+    text-decoration: none;}
+
+a{
+    text-decoration-line: none; 
+    text-decoration: none;}
+strong{color: #168feb;}
 
 .navResponsive{
     display: none;
@@ -125,6 +133,10 @@ strong{color: #0f6ab1;}
 /* media querys Nav - Header */
 
 @media screen and (max-width: 576px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        }
     .barraNavegadora{
         display: none;
 
