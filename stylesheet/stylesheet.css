@@ -231,3 +231,12 @@ footer ul li {
     display: inline-block;
     font-family:'Source Sans Pro', sans-serif;
     font-size: 100%;}
+
+.botonUp{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+.botonUp img{
+    width: 50px;
+}
