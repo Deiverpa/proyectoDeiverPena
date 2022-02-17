@@ -94,7 +94,7 @@ body{background-color: #0288D1;}
 
 /* Inicio Header y Barra de Navegación */
 header{
-    background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #91c9f5, #87c5f5, #7dc0f4, #73bbf3, #68b6f2, #5cb0f1, #50abf0); 
+    background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6); 
     height:120px ;
     }
 
@@ -109,21 +109,30 @@ nav ul {
     float: right; 
     word-spacing: 20px}
 
-a:hover{
-    color:#0f6ab1;
-    transform: scale(1.525);
+nav a:hover{
+    color:#0288D1;
+    transform: scale(2.25);
     transition:all 0.5s;}
+
 button{
     background-color: #168feb;
     margin: 5px; 
     font-family:'Source Sans Pro', sans-serif ;
     margin-top: 25px; 
-    text-decoration: none;}
+    text-decoration: none;
+    /* transform: scale(1.5);
+    transition: all 0.5s; */
+}
 a{
     text-decoration-line: none; 
     text-decoration: none;}
+
+a:visited{
+    color: #045c9c;
+}
+
 strong{
-    color: #168feb;}
+    color: #045c9c;}
 
 .navResponsive{
     display: none;
