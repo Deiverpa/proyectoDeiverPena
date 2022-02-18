@@ -121,10 +121,15 @@ nav ul {
     float: right; 
     word-spacing: 20px}
 
+
 nav a:hover{
     color:#0288D1;
     transform: scale(2.25);
-    transition:all 0.5s;}
+}
+a:hover{
+    color:#0f6ab1;
+    transform: scale(1.1);
+}
 
 button{
     background-color: #168feb;
