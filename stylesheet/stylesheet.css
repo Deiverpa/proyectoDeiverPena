@@ -3,7 +3,7 @@ body{background-color: #0288D1;}
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 0.4fr 0.1fr 0.5fr 1.6fr 0.4fr 0.1fr 1.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 1.5fr 0.4fr 0.1fr 0.5fr 1.6fr;
     gap: 0px 0px;
     background-color: #ffffff;
     margin-top: 5px;
@@ -41,10 +41,10 @@ body{background-color: #0288D1;}
         margin-top: 0%;
         padding-top: 0%;
     }
-    .botonServicios button a{color: black;}
+    .botonServicios button a{color: white;}
     .separadorSec { 
         grid-area: 4 / 1 / 5 / 5;
-        background-color: #168feb;
+        background-color: #0288D1;
         height: 40%;
         padding-bottom: 0%;
         margin-bottom: 0%;
@@ -57,6 +57,8 @@ body{background-color: #0288D1;}
     }
     .imagenSecPrincipal2{
         grid-area: 5 / 3 / 8 / 5;
+        background-image: url(../assets/imagenes/imagenPantallaInicial2\ 3.jpg);
+        background-size: cover;
     } 
     .h2{ grid-area: 5 / 1 / 6 / 3; 
         font-family: 'Source Sans Pro', sans-serif;
@@ -71,7 +73,7 @@ body{background-color: #0288D1;}
     }
     .botonNosotros { 
         grid-area: 7 / 1 / 8 / 3; }
-    .botonNosotros button a{color: black;}
+    .botonNosotros button a{color: white;}
     
     .imagenSecPrincipal { 
         grid-area: 1 / 1 / 4 / 3;
@@ -100,15 +102,20 @@ header{
 
 .me-2{
     height: 30%;
-    justify-content: center;
-
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px;
 }
 
+.btn-primary{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
-
-.navbar-brand{
-    transform: scale(1)
-} 
+.navbar-nav{
+    justify-items: end;
+}
 
 nav ul li {
     list-style-type:none; 
@@ -117,18 +124,16 @@ nav ul li {
     font-family:'Source Sans Pro', sans-serif; 
     font-size: 130%;}
 
-nav ul {
-    float: right; 
+.ms-auto{
     word-spacing: 20px}
 
 
 nav a:hover{
     color:#0288D1;
-    transform: scale(2.25);
+    transform: scale(1.15);
 }
 a:hover{
     color:#0f6ab1;
-    transform: scale(1.1);
 }
 
 button{
@@ -137,8 +142,8 @@ button{
     font-family:'Source Sans Pro', sans-serif ;
     margin-top: 25px; 
     text-decoration: none;
-    /* transform: scale(1.5);
-    transition: all 0.5s; */
+    border-radius: 10%;
+
 }
 a{
     text-decoration-line: none; 
@@ -155,10 +160,11 @@ strong{
     display: none;
 }
 
-ul{
-    justify-items: end;
-
+.nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 
 /* media querys Nav - Header */
 
@@ -248,6 +254,13 @@ ul{
     border-width: thick;
     border-style: solid;
     margin: 5px;}
+
+.separadorSec2{ 
+    background-color: #0288D1;
+    height: 20px;
+    grid-column: 5;
+    padding-bottom: 0%;
+    margin-bottom: 0%;}
 
 footer{
     background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #91c9f5, #87c5f5, #7dc0f4, #73bbf3, #68b6f2, #5cb0f1, #50abf0); 
