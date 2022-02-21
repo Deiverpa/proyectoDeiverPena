@@ -195,36 +195,25 @@ strong{
     color: #045c9c;
 }
 
+.navbar-expand-lg{
+    background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6);
+}
+
 
 /* media querys Nav - Header */
 
-/* @media screen and (max-width: 576px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        }} */
+ @media screen and (min-width: 576px){
+.navbar-expand-lg{
+        display: none;}}
+        @media screen and (max-width: 577px){
+            .navbar-expand-sm{
+                    display: none;}}
+        
 
-    /* .barraNavegadora{
-        display: none;
-
-    }
-    .nav a img{display: none;}
-    .navResponsive{
-        display: block;
-        background-color: #a5d3f7;
-        position: absolute;
-    }
-    header{
-        display: none;
-    }
-    .serviciosSección1{
-        height: 1%;
-    }
-    .grid-container2 {
+    /* .grid-container2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.6fr 0.6fr;}
-} */
+        grid-template-rows: 0.6fr 0.6fr;} */
 
 
 /* Final Header y Barra de Navegación */
