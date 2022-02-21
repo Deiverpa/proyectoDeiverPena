@@ -1,4 +1,10 @@
-body{background-color: #0288D1;}
+.bodyPantallaPrincipal{
+    background-color: #168feb;
+}
+
+body{
+    background-color: #ffffffa4;
+}
 
 .grid-container {
     display: grid;
@@ -243,15 +249,18 @@ strong{
 /* Inicio Contenido por página */
 /* servicios */
 
+.alert{
+    display: none;
+}
 
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.514);
+    
+}
 
-#fotoServicios{
-    border-color: #168feb;
-    border-radius: 50px;
-    padding: 0;
-    border-width: thick;
-    border-style: solid;
-    margin: 5px;}
+a.h5especial:visited{color: white;
+    
+}
 
 .separadorSec2{ 
     background-color: #0288D1;
