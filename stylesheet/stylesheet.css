@@ -8,13 +8,20 @@
     height: 5px;
 }
 
+.separadorGrid2{
+    background-color: #0288D1;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.3fr 0.0fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.3fr 5px 0.5fr 1fr;
     gap: 0px 0px;
     background-color: #ffffff;
     margin-top: 0px;
+    }
+    .separadorGrid2{
+        grid-area: 4 / 1 / 4 / 5 ;
     }
     .secPrincipal { 
         grid-area: 1 / 1 / 4 / 5;
