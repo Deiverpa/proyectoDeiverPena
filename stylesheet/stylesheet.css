@@ -134,10 +134,6 @@ header{
     margin-bottom: auto;
 }
 
-.navbar-nav{
-    justify-items: end;
-}
-
 nav ul li {
     list-style-type:none; 
     margin: 0px; padding: 0px ; 
@@ -154,6 +150,13 @@ nav a:hover{
     transform: scale(1.15);
     transition: 1.5s;
 }
+
+.nav-item:hover{
+    transform: scale(1.20);
+    transition: 1.5s;
+
+}
+
 a:hover{
     color:#0f6ab1;
 }
@@ -181,10 +184,6 @@ a:visited{
 
 strong{
     color: #045c9c;}
-
-.navResponsive{
-    display: none;
-}
 
 .nav-item{
     padding-left: 10px;
