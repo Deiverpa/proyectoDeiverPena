@@ -1,15 +1,17 @@
+/* INICIO BODY Y CSS */
 .bodyPantallaPrincipal{
     background-color: #168feb;
 }
 
-body{
-    background-color: #ffffffa4;
+.separadorGrid{
+    background-color: #0288D1;
+    height: 5px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 0.4fr 0.1fr 0.5fr 1.6fr;
+    grid-template-rows: 0.5fr 1fr 0.3fr 0.0fr 0.5fr 1fr;
     gap: 0px 0px;
     background-color: #ffffff;
     margin-top: 0px;
@@ -51,13 +53,7 @@ body{
         padding-top: 0%;
     }
     .botonServicios button a{color: white;}
-    .separadorSec { 
-        grid-area: 4 / 1 / 5 / 5;
-        background-color: #0288D1;
-        height: 40%;
-        padding-bottom: 0%;
-        margin-bottom: 0%;
-    }
+
     .secSecundaria { 
         grid-area: 5 / 1 / 8 / 5;
         padding-top: 0%;
@@ -114,6 +110,8 @@ body{
         margin-top: 60px;
 
     }
+
+/* FINAL BODY Y CSS */
 
 /* Inicio Header y Barra de Navegación */
 header{
@@ -197,25 +195,20 @@ strong{
 .navbar-expand-lg{
     background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6);
 }
-
+/* Final Header y Barra de Navegación */
 
 /* media querys Nav - Header */
 
- @media screen and (min-width: 576px){
-.navbar-expand-lg{
-        display: none;}}
-        @media screen and (max-width: 577px){
-            .navbar-expand-sm{
-                    display: none;}}
-        
+/* @media screen and (min-width: 576px){
+.grid-container{
+    flex-direction: column;}} */
+
 
     /* .grid-container2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.6fr 0.6fr;} */
 
-
-/* Final Header y Barra de Navegación */
 
 /* Inicio Contenido General*/
 .botonServicios{
@@ -246,8 +239,6 @@ strong{
     
 }
 
-
-
 .separadorSec2{ 
     background-color: #0288D1;
     height: 20px;
@@ -255,6 +246,8 @@ strong{
     padding-bottom: 0%;
     margin-bottom: 0%;}
 
+
+/* INICIO FOOTER Y JS */
 footer{
     background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #91c9f5, #87c5f5, #7dc0f4, #73bbf3, #68b6f2, #5cb0f1, #50abf0); 
     height: 120px; 
@@ -277,3 +270,4 @@ footer ul li {
 .botonUp img{
     width: 50px;
 }
+/* FINAL FOOTER Y JS */
