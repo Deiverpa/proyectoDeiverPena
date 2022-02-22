@@ -214,7 +214,24 @@ strong{
 .grid-container{
     display: flex;
     flex-direction: column;
-}} 
+}
+.secSecundaria{
+    display: flex;
+    flex-direction: column;
+}
+.separadorGrid2{
+    height: 5px;
+}
+.imagenSecPrincipal2{
+    height: 260px;
+}
+.separadorSec2{
+    height: 5px;
+}
+.loguito{
+    margin-top: auto;
+}
+} 
 
 
 /* Inicio Contenido General*/
@@ -230,6 +247,8 @@ strong{
 
 .botonNosotros button{
     align-self: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 /* Final Contenido General */
@@ -248,7 +267,7 @@ strong{
 
 .separadorSec2{ 
     background-color: #0288D1;
-    height: 20px;
+    height: 5px;
     grid-column: 5;
     padding-bottom: 0%;
     margin-bottom: 0%;}
