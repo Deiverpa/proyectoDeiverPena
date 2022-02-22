@@ -187,6 +187,10 @@ a:visited{
     color: #045c9c;
 }
 
+h5 a:visited{
+    color: white;
+}
+
 strong{
     color: #045c9c;}
 
@@ -206,15 +210,11 @@ strong{
 
 /* media querys Nav - Header */
 
-/* @media screen and (min-width: 576px){
+@media screen and (max-width: 576px){
 .grid-container{
-    flex-direction: column;}} */
-
-
-    /* .grid-container2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.6fr 0.6fr;} */
+    display: flex;
+    flex-direction: column;
+}} 
 
 
 /* Inicio Contenido General*/
