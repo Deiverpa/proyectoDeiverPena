@@ -47,43 +47,69 @@
                 </div>
             </div>
         </nav>
-        <div class="separadorGrid"></div>
-    </header>
+        <div class="separadorGrid3"></div>    
+    </header>    
     <main>
-    <form method="get">
-        <label for="Nombres">Nombres:</label>
-        <input type="text" placeholder="Pepito" name="Nombres">
-        <br>
-        <label for="Apellidos">Apellidos:</label>
-        <input type="text" placeholder="Perez" name="Apellidos">
-        <br>
-        <label for="number">Número</label>
-        <input type="number">
-        <br>
-        <label for="Email">Email</label>
-        <input type="Email" placeholder=" ejemplo@jsd.com">
-        <br>
-        <label for="Comentarios">Comentarios</label>
-        <textarea placeholder="Déjanos saber brevemente por qué nos contactas" name="Comentarios" id="" cols="30" rows="10"Resizenon ></textarea>
-        <br>
-<!-- Resize non para que el usuario no me mueva el cuadro de TEXT AREA --> 
-        <label for="button"></label>
-        <input type="button" value="Enviar">
-        <label for="button"></label>
-        <input type="reset" value="Limpiar">
-        <br>
-        <label for="acepto">Acepto el tratamiento de datos</label>
-        <input type="checkbox" name="acepto" id="999">
+        <h2>¡Contáctanos! Creamos juntos, crecemos juntos.</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="Nombres" class="form-label">Nombres</label>
+                <input type="Nombres" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Apellidos</label>
+                <input type="Apellidos" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Número Celular</label>
+                <input type="number" class="form-control" id="inputAddress" placeholder="300 000 0000">
+            </div>
+            <div class="col-md-6">
+                <label for="inputAddress2" class="form-label">Email</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="ejemplo@ejemplo.com">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Servicio de interés</label>
+                <select id="inputState" class="form-select">
+                <option selected>Selecciona...</option>
+                <option>Outsorcing y Asesoría Contable</option>
+                <option>Declaraciones de Renta</option>
+                <option>Trámites ante entidades</option>
+                <option>Afiliaciones y Seguridad Social</option>
+                <option>Auditoría y cumplimiento</option>
+                <option>Otros...</option>
+                </select>
+            </div>
+            <div class="col-md-8">
+                <label for="inputZip" class="form-label">Comentarios adicionales</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                    Acepto el tratamiento de datos de este sitio web
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
     </main>    
-    </form>
+    <div class="separadorGrid"></div>      
+        <div class="botonUp" data-aos="fade-left">
+            <a href="#"><img src="../assets/imagenes/imagenBotonIrArriba.png" alt="imagenBotonIrArriba"></a>
+        </div>
     <footer>
         <p><strong>TLDR 2022</strong></p>
-
         <UL>
             <li><a href="https://www.instagram.com/jsdconsultinggroup/" target="blank" >Síguenos en Instragram</a></li>
             <li><a href="https://www.facebook.com/JSD-Consulting-Group-108064534315079/" target="blank" >Síguenos en Facebook</a></li>
         </UL>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> 
 </body>
 
 </html>
