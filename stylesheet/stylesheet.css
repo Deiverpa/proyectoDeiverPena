@@ -320,11 +320,16 @@ form{
 } */
 
 .col-2{
-    margin: auto;
+    margin-left: 0px;
 }
 
 .imagenNosotros2022 img{
     object-fit: contain;
+}
+
+.containerflex{
+    display: flex;
+    flex-direction: column;
 }
 
 /* final nosotros */
