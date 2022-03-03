@@ -1,8 +1,36 @@
-h1 {
-  color: black;
+/* Variables Color */
+/* Variables fuentes */
+/* Mixins */
+/* Contenido Layout y Grid*/
+.bodyPantallaPrincipal {
+  background-color: #168feb;
 }
 
-a {
-  color: red;
+.separadorGrid {
+  background-color: #0288D1;
+  height: 5px;
+}
+
+.separadorGri2 {
+  background-color: #0288D1;
+}
+
+.separadorGri3 {
+  background-color: #0288D1;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+/* Contenido Grid*/
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 0.5fr 1fr 0.3fr 5px 0.5fr 1fr;
+      grid-template-rows: 0.5fr 1fr 0.3fr 5px 0.5fr 1fr;
+  gap: 0px 0px;
+  background-color: #ffffff;
+  margin-top: 0px;
 }
 /*# sourceMappingURL=estilos.css.map */

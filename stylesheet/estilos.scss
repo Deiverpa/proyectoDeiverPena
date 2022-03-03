@@ -1,7 +1,47 @@
-h1{
-	color: black;
+/* Variables Color */
+$colorBackground:#168feb;
+$colorBackgroundFormulario: #9acef66e;
+$colorBackgroundGrid: #ffffff;
+$colorBotones: #168feb;
+$colorSeparador: #0288D1;
+$colorTitulos: #0f6ab1;
+$color-A-Visited-Strong: #045c9c;
+$colorHover: #0288D1;
+
+/* Variables fuentes */
+$fuentePrincipal:'Source Sans Pro', sans-serif;
+
+/* Mixins */
+@mixin separadorGrid {
+	background-color: $colorSeparador;
+	height: 5px;
+} 
+
+/* Contenido Layout y Grid*/
+
+.bodyPantallaPrincipal{
+	background-color: $colorBackground;
 }
 
-a{
-	color: red;
+.separadorGrid{
+	@include separadorGrid;
 }
+
+.separadorGri2{
+	background-color: $colorSeparador;
+}
+.separadorGri3{
+	@include separadorGrid;
+	margin-bottom: 5px;
+}
+
+/* Contenido Grid*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.3fr 5px 0.5fr 1fr;
+    gap: 0px 0px;
+    background-color: $colorBackgroundGrid;
+    margin-top: 0px;
+    }
