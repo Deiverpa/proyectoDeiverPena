@@ -28,7 +28,7 @@ $fuentePrincipal:'Source Sans Pro', sans-serif;
 }
 
 .separadorGri2{
-	background-color: $colorSeparador;
+	@include separadorGrid;
 }
 .separadorGri3{
 	@include separadorGrid;
@@ -44,4 +44,292 @@ $fuentePrincipal:'Source Sans Pro', sans-serif;
     gap: 0px 0px;
     background-color: $colorBackgroundGrid;
     margin-top: 0px;
-    }
+}
+.separadorGrid2{
+	grid-area: 4 / 1 / 4 / 5 ;
+	background-color: $colorSeparador;
+}	
+.secPrincipal { 
+    grid-area: 1 / 1 / 4 / 5;
+    margin-top: 0px;
+}
+.imagenSecPrincipal { 
+    grid-area: 1 / 1 / 4 / 3;
+    display: flex;
+    justify-content: center;
+}
+.dimensionImagen{
+    width:100%;
+    height: 100%;
+}
+.dimensionImagen2{
+    width:100%
+}
+.h1 { 
+    grid-area: 1 / 3 / 2 / 5;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align:center;
+    color:$colorTitulos;
+    font-size: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.textoPrincipal {
+    grid-area: 2 / 3 / 3 / 5; font-family:'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+.botonServicios {
+    grid-area: 3 / 3 / 4 / 5;
+    margin-top: 0%;
+    padding-top: 0%;
+	text-align: center;
+	margin: 0px;
+	button {
+		align-self: center;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    		a{
+		color: white;
+			}
+		}
+}
+.secSecundaria{ 
+    grid-area: 5 / 1 / 8 / 5;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+.imagenSecPrincipal2{
+	margin-top: 0%;
+	grid-area: 5 / 3 / 8 / 5;
+	background-image: url(../assets/imagenes/imagenPantallaInicialsass.jpg);
+	background-size: cover;
+	margin-bottom: 0px;
+}
+.h2{ grid-area: 5 / 1 / 6 / 3; 
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align:center;
+	color: $colorTitulos;
+	font-size: 120%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.textoSecundario { 
+	grid-area: 6 / 1 / 7 / 3;
+	font-family:'Source Sans Pro', sans-serif;
+	text-align: center;
+	margin-bottom: auto;
+}
+
+.botonNosotros{
+	grid-area: 7 / 1 / 8 / 3;
+		button a{
+			color: white;
+		}
+	}
+
+
+.loguito{
+	margin-top: 60px;
+	margin-top: auto;
+}
+
+/*Final Contenido Grid*/
+
+/*Header*/
+
+header{
+    background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6); 
+    height:120px ;
+}
+.me-2{
+    height: 30%;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 8px;
+}
+.btn-primary{
+    margin-top: auto;
+    margin-bottom: auto;
+	background-color: $colorBotones;
+}
+.ms-auto{
+    word-spacing: 20px
+}
+.btn-primary{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+button{
+    background-color: $colorBotones;
+    margin: 5px; 
+    font-family:'Source Sans Pro', sans-serif ;
+    margin-top: 25px; 
+    text-decoration: none;
+    border-radius: 10%;
+}
+nav ul li {
+    list-style-type:none; 
+    margin: 0px; padding: 0px ; 
+    display: inline-block;
+    font-family:'Source Sans Pro', sans-serif; 
+    font-size: 130%;
+}
+nav a:hover{
+    color:$colorSeparador;
+    transform: scale(1.15);
+    transition: 1.5s;
+}
+.nav-item:hover{
+    transform: scale(1.20);
+    transition: 1.5s;
+}
+.nav-item{padding-left: 10px;
+	padding-right: 10px;
+		a{
+			color:$color-A-Visited-Strong
+		}
+}
+.navbar-expand-lg{
+    background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6);
+}
+/*Final Header*/
+
+/* media querys*/
+@media screen and (max-width: 576px){
+	.grid-container{
+		display: flex;
+		flex-direction: column;
+	}
+	.secSecundaria{
+		display: flex;
+		flex-direction: column;
+	}
+	.imagenSecPrincipal2{
+		height: 260px;
+	}
+	.separadorSec2{
+		height: 5px;
+	}
+	.loguito{
+		margin-top: auto;
+	}
+	.rowcontainernosotros{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.imagenNosotros2022 img{
+		width: 350px;
+	}
+} 
+/* Final Media Querys*/
+
+/* Inicio Contenido General*/
+.botonNosotros{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+		button{
+			align-self: center;
+			margin-top: 10px;
+			margin-bottom: 25px;
+		}
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align:center;
+    color: $colorTitulos;
+    margin-top: 15px;
+}
+h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $colorTitulos;
+    margin-top: 10px;
+}
+.g-3{
+    margin: 10px;
+}
+form{
+    background-color: $colorBackgroundFormulario;
+    padding-bottom: 10px;
+}
+a{
+    text-decoration-line: none; 
+    text-decoration: none;
+}
+a:visited{
+    color: $color-A-Visited-Strong;
+}
+h5 a:visited{
+    color: white;
+}
+strong{
+    color:$color-A-Visited-Strong;
+}
+
+/* Final Contenido General */
+
+/* Inicio Contenido por página */
+
+/* servicios */
+
+.alert{
+    display: none;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.514);   
+}
+
+.separadorSec2{ 
+    background-color: $colorSeparador;
+    height: 5px;
+    grid-column: 5;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+/* final servicios */
+
+/* inicio nosotros */
+.col-2{
+    margin-left: 0px;
+}
+
+.imagenNosotros2022 img{
+    object-fit: contain;
+}
+
+.containerflex{
+    display: flex;
+    flex-direction: column;
+}
+/* final nosotros */
+
+/* inicio contacto */
+
+/* final contacto */
+
+/* INICIO FOOTER Y JS */
+footer{
+    background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #91c9f5, #87c5f5, #7dc0f4, #73bbf3, #68b6f2, #5cb0f1, #50abf0); 
+    height: 120px;
+	text-align: center;
+	ul li{
+		list-style-type:none; margin: 0px; 
+		padding: 0px ; 
+		display: inline-block;
+		font-family:'Source Sans Pro', sans-serif;
+		font-size: 100%;}
+	}
+.botonUp{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+.botonUp img{
+    width: 50px;
+}
+/* FINAL FOOTER Y JS */
+
