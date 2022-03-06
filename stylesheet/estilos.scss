@@ -127,12 +127,6 @@ $fuentePrincipal:'Source Sans Pro', sans-serif;
 		}
 	}
 
-
-.loguito{
-	margin-top: 60px;
-	margin-top: auto;
-}
-
 /*Final Contenido Grid*/
 
 /*Header*/
@@ -211,9 +205,28 @@ nav a:hover{
 	.separadorSec2{
 		height: 5px;
 	}
+    h1{
+        font-size: calc(1.325rem + .9vw);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 	.loguito{
+        height: auto;
 		margin-top: auto;
 	}
+    .parrafoP{
+        margin-bottom: 0px;
+    }
+    .separadorGrid2{
+        height: 5px;
+    }
+    .separadorSec2{
+        display: none;
+    }
 	.rowcontainernosotros{
 		display: flex;
 		flex-direction: column;
@@ -222,6 +235,9 @@ nav a:hover{
 	.imagenNosotros2022 img{
 		width: 350px;
 	}
+    .ulFooter{
+        padding-left: 0;
+    }
 } 
 /* Final Media Querys*/
 
@@ -329,6 +345,14 @@ footer{
     right: 5px;
 }
 .botonUp img{
+    width: 50px;
+}
+.botonUp2{
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+.botonUp2 img{
     width: 50px;
 }
 /* FINAL FOOTER Y JS */
