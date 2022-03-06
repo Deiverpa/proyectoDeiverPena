@@ -465,6 +465,10 @@ footer ul li {
   position: fixed;
   bottom: 5px;
   left: 5px;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .botonUp2 img {
