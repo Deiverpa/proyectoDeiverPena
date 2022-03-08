@@ -65,6 +65,12 @@ $fuentePrincipal:'Source Sans Pro', sans-serif;
 .dimensionImagen2{
     width:100%
 }
+.parrafoP{
+    margin-bottom: 3rem;
+}
+.parrafoP2{
+    margin-bottom: 2.5rem;
+}
 .h1 { 
     grid-area: 1 / 3 / 2 / 5;
     font-family: 'Source Sans Pro', sans-serif;
@@ -74,9 +80,12 @@ $fuentePrincipal:'Source Sans Pro', sans-serif;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .textoPrincipal {
     grid-area: 2 / 3 / 3 / 5; font-family:'Source Sans Pro', sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .botonServicios {
     grid-area: 3 / 3 / 4 / 5;
@@ -238,6 +247,10 @@ nav a:hover{
     .ulFooter{
         padding-left: 0;
     }
+/*Servicios*/
+#myCarousel{
+    font-size: 0.8rem;
+}
 } 
 /* Final Media Querys*/
 
@@ -246,9 +259,11 @@ nav a:hover{
     text-align: center;
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 18px;
 		button{
 			align-self: center;
-			margin-top: 10px;
+			margin-top: 0px;
 			margin-bottom: 25px;
 		}
 }
@@ -309,17 +324,12 @@ strong{
 /* final servicios */
 
 /* inicio nosotros */
-.col-2{
-    margin-left: 0px;
-}
-
-.imagenNosotros2022 img{
-    object-fit: contain;
-}
-
-.containerflex{
-    display: flex;
-    flex-direction: column;
+// .containerflex{
+//     margin-left: 10px;
+//     margin-right: 10px;
+// }
+.imagenNosotros2022{
+    background-image: url(../assets/imagenes/imagennosotrosjsd3.jpg);
 }
 /* final nosotros */
 

@@ -76,6 +76,14 @@
   width: 100%;
 }
 
+.parrafoP {
+  margin-bottom: 3rem;
+}
+
+.parrafoP2 {
+  margin-bottom: 2.5rem;
+}
+
 .h1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -98,6 +106,13 @@
   grid-area: 2 / 3 / 3 / 5;
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .botonServicios {
@@ -328,6 +343,10 @@ nav a:hover {
   .ulFooter {
     padding-left: 0;
   }
+  /*Servicios*/
+  #myCarousel {
+    font-size: 0.8rem;
+  }
 }
 
 /* Final Media Querys*/
@@ -340,13 +359,15 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 18px;
 }
 
 .botonNosotros button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 25px;
 }
 
@@ -412,23 +433,8 @@ strong {
 
 /* final servicios */
 /* inicio nosotros */
-.col-2 {
-  margin-left: 0px;
-}
-
-.imagenNosotros2022 img {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.containerflex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.imagenNosotros2022 {
+  background-image: url(../assets/imagenes/imagennosotrosjsd3.jpg);
 }
 
 /* final nosotros */
