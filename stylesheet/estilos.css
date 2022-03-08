@@ -198,6 +198,22 @@
   color: white;
 }
 
+.imagenNosotros2022 {
+  background-image: url(../assets/imagenes/imagennosotrosjsd3.jpg);
+  background-size: cover;
+  height: 670px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 1.5%;
+}
+
+.col-4 {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 4rem;
+  padding-left: 0;
+}
+
 /*Final Contenido Grid*/
 /*Header*/
 header {
@@ -337,15 +353,81 @@ nav a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .imagenNosotros2022 img {
-    width: 350px;
-  }
   .ulFooter {
     padding-left: 0;
   }
   /*Servicios*/
   #myCarousel {
     font-size: 0.8rem;
+  }
+}
+
+/*Nosotros*/
+@media screen and (max-width: 987px) {
+  .rowcontainernosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .col-8 {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .col-4 {
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .rowcontainernosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .col-8 {
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .col-4 {
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .col-8 {
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 991px) and (max-width: 463px) {
+  .col-8 {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 991px) and (max-width: 355px) {
+  .col-8 {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 991px) and (max-width: 290px) {
+  .col-8 {
+    display: none;
   }
 }
 
@@ -433,13 +515,15 @@ strong {
 
 /* final servicios */
 /* inicio nosotros */
-.imagenNosotros2022 {
-  background-image: url(../assets/imagenes/imagennosotrosjsd3.jpg);
-}
-
 /* final nosotros */
 /* inicio contacto */
 /* final contacto */
+/* Inicio Blog*/
+iframe {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 /* INICIO FOOTER Y JS */
 footer {
   background-image: -webkit-gradient(linear, left top, right top, from(#c5e3fa), color-stop(#badef9), color-stop(#b0d9f8), color-stop(#a5d3f7), color-stop(#9acef6), color-stop(#91c9f5), color-stop(#87c5f5), color-stop(#7dc0f4), color-stop(#73bbf3), color-stop(#68b6f2), color-stop(#5cb0f1), to(#50abf0));
