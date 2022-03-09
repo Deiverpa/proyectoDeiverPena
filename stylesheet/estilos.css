@@ -431,6 +431,15 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .nav-item:hover {
+    -webkit-transform: scale(1.005);
+            transform: scale(1.005);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+}
+
 /* Final Media Querys*/
 /* Inicio Contenido General*/
 .botonNosotros {
