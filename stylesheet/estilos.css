@@ -292,6 +292,11 @@ nav a:hover {
   background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6);
 }
 
+nav {
+  position: relative;
+  z-index: 1;
+}
+
 /*Final Header*/
 /* media querys*/
 @media screen and (max-width: 576px) {
@@ -522,9 +527,24 @@ strong {
   margin-bottom: 0%;
 }
 
+.container-lg {
+  position: relative;
+  z-index: -1;
+}
+
 /* final servicios */
 /* inicio nosotros */
 /* final nosotros */
+.separadorGrid3 {
+  background-color: #0288D1;
+  height: 5px;
+}
+
+form {
+  position: relative;
+  z-index: -1;
+}
+
 /* inicio contacto */
 /* final contacto */
 /* Inicio Blog*/

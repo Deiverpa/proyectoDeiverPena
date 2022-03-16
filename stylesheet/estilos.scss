@@ -209,6 +209,9 @@ nav a:hover{
 .navbar-expand-lg{
     background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6);
 }
+nav{position: relative;
+    z-index: 1;
+}
 /*Final Header*/
 
 /* media querys*/
@@ -394,13 +397,22 @@ strong{
     padding-bottom: 0%;
     margin-bottom: 0%;
 }
-
+.container-lg{
+    position: relative;
+    z-index: -1;
+}
 /* final servicios */
 
 /* inicio nosotros */
 
 /* final nosotros */
-
+.separadorGrid3{
+    @include separadorGrid;
+}
+form{
+    position: relative;
+    z-index: -1;
+}
 /* inicio contacto */
 
 /* final contacto */
