@@ -210,7 +210,7 @@ nav a:hover{
     background-image: linear-gradient(to right, #c5e3fa, #badef9, #b0d9f8, #a5d3f7, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6, #9acef6);
 }
 nav{position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 /*Final Header*/
 
@@ -267,6 +267,32 @@ nav{position: relative;
 #myCarousel{
     font-size: 0.8rem;
 }
+.título{
+    height: 3.5rem;
+}
+h2{
+    margin-bottom: 0px;
+    padding-top: 0.55rem;
+}
+.separadorSass{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 373px){
+    .título{
+        height: 4rem;
+    }
+    h2{
+        margin-bottom: 0px;
+        padding-top: 0.7rem;
+    }
+}
+@media screen and (max-width: 333px){
+    .separadorSass{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
 } 
 /*Nosotros*/
 @media screen and (max-width: 987px){
@@ -285,6 +311,18 @@ nav{position: relative;
         margin-bottom: auto;
         padding-right: 10px;
         padding-left: 10px;
+    }
+    h1{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .parrafoP{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .parrafoP2{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 }
 @media screen and (max-width: 1199px){
@@ -399,7 +437,7 @@ strong{
 }
 .container-lg{
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 /* final servicios */
 
@@ -436,6 +474,11 @@ footer{
 		font-family:'Source Sans Pro', sans-serif;
 		font-size: 100%;}
 	}
+    @media screen and (max-width: 373px){
+        footer{
+            height: 160px;
+        }
+    }
 .botonUp{
     position: fixed;
     bottom: 5px;
