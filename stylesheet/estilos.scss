@@ -367,6 +367,25 @@ transform: scale(1.005);
 transition: 1s;
 }
 }
+
+/* Contacto */
+@media screen and (min-width: 768px){
+    .separadorSass{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .separadorSass2{
+        padding-top: 2rem;
+    }
+    .h2Contacto{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    footer{
+        height:160px;
+    }
+}
+
 /* Final Media Querys*/
 
 /* Inicio Contenido General*/
@@ -392,6 +411,11 @@ h3{
     font-family: 'Source Sans Pro', sans-serif;
     color: $colorTitulos;
     margin-top: 10px;
+}
+h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $colorTitulos;
+    font-size: 1.5rem;
 }
 .g-3{
     margin: 10px;
@@ -446,10 +470,11 @@ strong{
 /* final nosotros */
 .separadorGrid3{
     @include separadorGrid;
+    margin-bottom: 10px;
 }
 form{
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 /* inicio contacto */
 
@@ -457,10 +482,59 @@ form{
 
 /* Inicio Blog*/
 
+.containerBlog{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 iframe{
-    margin-left:0.5rem;
-    margin-right:0.5rem
-} 
+    width: min-content;
+}
+@media screen and (max-width: 768px){
+	iframe{
+        margin-left: 7rem;
+        margin-right: 7rem;
+	}
+    h3{
+        margin-left: 7rem;
+        margin-right: 7rem;
+}
+}
+@media screen and (max-width: 540px){
+	iframe{
+        margin-left: 5rem;
+        margin-right: 5rem;
+	}
+    h3{
+        margin-left: 5rem;
+        margin-right: 5rem;
+}
+
+}
+@media screen and (max-width: 480px){
+	iframe{
+        margin-left: 3rem;
+        margin-right: 3rem;
+	}
+    h3{
+        margin-left: 3rem;
+        margin-right: 3rem;
+}
+
+}
+@media screen and (max-width: 420px){
+	iframe{
+        margin-left: auto;
+        margin-right: auto;
+	}
+    h3{
+        margin-left: auto;
+        margin-right: auto;
+}
+
+}
+
+/* Final Blog*/ 
 
 /* INICIO FOOTER Y JS */
 footer{
@@ -473,12 +547,20 @@ footer{
 		display: inline-block;
 		font-family:'Source Sans Pro', sans-serif;
 		font-size: 100%;}
+        .devVer{
+            padding-top: 16px;
+        }
 	}
     @media screen and (max-width: 373px){
         footer{
             height: 160px;
         }
     }
+    @media screen and (min-width: 768px){
+        footer{
+            height:160px;
+        }
+        }
 .botonUp{
     position: fixed;
     bottom: 5px;
