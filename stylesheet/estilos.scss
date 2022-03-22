@@ -531,8 +531,21 @@ iframe{
         margin-left: auto;
         margin-right: auto;
 }
-
 }
+@media screen and (max-width: 1399px){
+.separadorSass{
+    display: none;
+}
+.h2Título{
+    height: 250px;
+}
+}
+@media screen and (min-width: 1399px){
+    .h2Título{
+        height: 50px;
+    }    
+}    
+
 
 /* Final Blog*/ 
 
@@ -560,7 +573,12 @@ footer{
         footer{
             height:160px;
         }
-        }
+    }
+    @media screen and (min-width: 1399px){
+        footer{
+            height:290px;
+        }    
+    }    
 .botonUp{
     position: fixed;
     bottom: 5px;
